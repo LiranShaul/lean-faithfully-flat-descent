@@ -1,7 +1,7 @@
 name = "proj6"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["Proj6"]
+defaultTargets = ["lib"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`

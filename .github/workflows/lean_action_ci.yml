@@ -1,5 +1,9 @@
 name: Lean Action CI
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+  
 on:
   push:
   pull_request:

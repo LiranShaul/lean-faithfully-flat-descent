@@ -1,7 +1,7 @@
 name = "proj6"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["lib"]
+defaultTargets = ["Proj6", "lib"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -14,6 +14,23 @@ name = "mathlib"
 scope = "leanprover-community"
 rev = "v4.26.0-rc2"
 
+# This builds the files in your main folder
+[[lean_lib]]
+name = "Proj6"
+roots = ["basechange"]
+
+# This builds the files inside the lib folder
 [[lean_lib]]
 name = "lib"
-roots = ["lib.Kap", "lib.mlModule", "lib.mlSystem", "lib.Lazard", "lib.Pushout", "lib.UnivInj", "lib.Domination", "lib.dirlimitchange", "lib.fpLemma"]
+roots = [
+  "lib.Basic", 
+  "lib.dirlimitchange", 
+  "lib.Domination", 
+  "lib.fpLemma", 
+  "lib.Kap", 
+  "lib.Lazard", 
+  "lib.mlModule", 
+  "lib.mlSystem", 
+  "lib.Pushout", 
+  "lib.UnivInj"
+]

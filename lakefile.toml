@@ -4,7 +4,7 @@ keywords = ["math"]
 defaultTargets = ["lib"]
 
 [leanOptions]
-pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+pp.unicode.fun = true
 relaxedAutoImplicit = false
 weak.linter.mathlibStandardSet = true
 maxSynthPendingDepth = 3
@@ -16,5 +16,4 @@ rev = "v4.26.0-rc2"
 
 [[lean_lib]]
 name = "lib"
-srcDir = "lib"
-roots = ["dirlimitchange","Kap", "mlModule", "mlSystem", "Lazard", "Pushout", "UnivInj", "Domination", "fpLemma"]
+roots = ["lib.Kap", "lib.mlModule", "lib.mlSystem", "lib.Lazard", "lib.Pushout", "lib.UnivInj", "lib.Domination", "lib.dirlimitchange", "lib.fpLemma"]

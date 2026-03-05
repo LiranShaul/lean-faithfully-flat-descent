@@ -13,6 +13,7 @@ This repository contains a formalization of the faithfully flat descent of proje
 
 The project consists of over 10,000 lines of new code developed for Lean 4 and Mathlib:
 
+* `basechange.lean`: The main results, including Theorem I and Theorem II.
 * `lib/Kap.lean`: Kaplansky devissage and countable generation framework.
 * `lib/mlModule.lean` & `lib/mlSystem.lean`: Mittag-Leffler modules and inverse systems.
 * `lib/Lazard.lean`: Proof of Lazard's theorem.
